@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Information Manager</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Add Font Awesome here -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+   
+    <form id="infoForm" style="display: none;">
+      <h4>Dossier</h4>
+      <br>
+      <div class="info-section">
+        <input type="text" id="githubLink" placeholder="GitHub" class="copy-field">
+        <i class="fas fa-copy copy-icon" data-clipboard-target="#githubLink"></i>
+      </div>
+
+      <div class="info-section">
+        <input type="text" id="resumeLink" placeholder="Resume" class="copy-field">
+        <i class="fas fa-copy copy-icon" data-clipboard-target="#resumeLink"></i>
+      </div>
+
+      <div class="info-section">
+        <input type="text" id="linkedinProfile" placeholder="LinkedIn" class="copy-field">
+        <i class="fas fa-copy copy-icon" data-clipboard-target="#linkedinProfile"></i>
+      </div>
+
+      <div class="info-section">
+        <input type="email" id="email" placeholder="Email" class="copy-field">
+        <i class="fas fa-copy copy-icon" data-clipboard-target="#email"></i>
+      </div>      
+
+      <div class="info-section">
+        <input type="text" id="phone" placeholder="Phone" class="copy-field">
+        <i class="fas fa-copy copy-icon" data-clipboard-target="#phone"></i>
+      </div>
+
+      <div class="info-section">
+        <input type="text" id="driveLink" placeholder="Drive Link" class="copy-field">
+        <i class="fas fa-copy copy-icon" data-clipboard-target="#driveLink"></i>
+      </div>
+      
+
+      <button type="button" id="saveBtn">Save</button>
+    </form>
+
+  <div id="lockedMessage" style="display: block;">Please unlock to view and save personal information.</div>
+<br>
+  <input type="password" id="passwordInput" placeholder="Enter your password">
+  <button id="unlockBtn">Unbox</button>
+
+  <button id="setPasswordBtn" style="display: none;">Set Password</button>
+  <button id="changePasswordBtn" style="display: none;">Change Password</button>
+
+  <!-- Add Reset Password button -->
+  <button id="resetPasswordBtn">Reset</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

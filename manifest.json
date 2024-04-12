@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Personal Info Manager",
+  "version": "1.0",
+  "description": "A Chrome extension to save and copy personal information.",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "icons": {
+    "128": "database.png"
+  },
+  "permissions": ["storage"]
+}
